@@ -197,6 +197,10 @@ body {
     background: #F8F8F8;
 }
 
+
+
+
+
 .product__card:nth-child(-n+3) {
     margin-bottom: 30px;
 }
@@ -248,6 +252,10 @@ body {
     text-transform: none;
 }
 
+.browse__all__product:hover {
+    background: #F16D7F;
+}
+
 .browse__all__product span {
     width: 212px;
     height: 48px;
@@ -260,6 +268,11 @@ body {
     color: #F26376;
     display: inline-block;
 }
+
+.browse__all__product span:hover {
+    color: #Ffffff;
+}
+
 
 .bottom__content {
     margin-top: 95px;
@@ -381,6 +394,10 @@ body {
     background: #F16D7F;
 }
 
+.subscribe__button:hover {
+    background: #D73C3C;
+}
+
 .footer__info {
     min-height: 79px;
     background: #222224;
@@ -400,8 +417,12 @@ body {
 
 .footer__link {
     text-decoration: none;
-    text-transform: none;
-    
+    text-transform: none; 
+}
+
+.footer__icon:hover .footer__link__icon__background {
+    stroke: #F16D7F;
+    fill: #F16D7F;
 }
 
 
