@@ -40,10 +40,12 @@
     align-items: center
     justify-content: space-between
 
+
     &__block
         max-width: 360px
         min-height: 134px
         text-align: center
+
 
     &__text__1
         margin-top: 25px
@@ -53,6 +55,7 @@
         font-size: 20px
         line-height: 24px
         color: #FBFBFB
+
 
     &__text__2
         max-width: 300px
@@ -65,4 +68,117 @@
         text-align: center
         color: #FBFBFB
 
-    @import footer
+.subscribe
+    min-height: 448px
+    background-image: url('../images/footer_background_image.jpg')
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    display: flex
+    justify-content: space-between
+
+
+    &__block__1
+        text-align: center
+        margin-top: 97px
+
+
+    &__block__1__text
+        margin-top: 30px
+        max-width: 360px
+        min-height: 99px
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 24px
+        text-align: center
+        color: #222224
+
+
+    &__block__2
+        margin-top: 150px
+        text-align: center
+
+
+    &__block__2__p__1
+        font-family: Lato
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 167%
+        text-align: center
+        color: #222224
+
+
+    &__form
+        margin-top: 32px
+        display: flex
+        flex-wrap: nowrap
+
+
+    &__input
+        width: 256px
+        height: 49px
+        background: #E1E1E1
+        border: none
+        border-top-left-radius: 20px
+        border-bottom-left-radius: 20px
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #222224
+        opacity: 0.67
+        padding-left: 22px
+
+
+    &__button
+        width: 100px
+        height: 49px
+        border: none
+        border-top-right-radius: 20px
+        border-bottom-right-radius: 20px
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        align-items: center
+        text-align: center
+        color: #FFFFFF
+        background: #F16D7F
+
+
+    &__button:hover
+        background: #D73C3C
+
+.footer__info
+    min-height: 79px
+    background: #222224
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+
+    &__copyright
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        color: #FBFBFB
+
+.footer__link
+    text-decoration: none
+    text-transform: none
+
+
+    .footer__icon:hover &__icon__background
+        stroke: #F16D7F
+        fill: #F16D7F
+
+
+    .footer__icon:hover &__icon__text
+        fill: #FffffF
