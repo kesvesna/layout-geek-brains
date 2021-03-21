@@ -15,6 +15,172 @@
         font-size: 24px
         line-height: 29px
         color: #F16D7F
+.cart
+    margin-top: 96px
+    display: flex
+    justify-content: space-between
+
+.product__card
+    display: flex
+    margin-bottom: 40px
+    padding-right: 22px
+    box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
+
+    &__text
+        margin-left: 31px
+        margin-top: 22px
+        max-width: 262px
+
+.top__row
+    max-width: 209px
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 24px
+    line-height: 29px
+    color: #222222
+
+.spectext
+    max-width: 166px
+    margin-top: 42px
+
+    & p
+        margin-bottom: 6px
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 22px
+        line-height: 26px
+        color: #575757
+
+.spectext__price
+    color: #F16D7F
+
+.spectext__color
+    color: #B1B1B1
+
+.spectext__size
+    color: #b1b1b1
+
+.spectext__qauntity
+    width: 44px
+    height: 25px
+    border-color: #b1b1b1
+
+.product__card__remove
+    margin-left: 53px
+    width: 18px
+    height: 18px
+    margin-top: 28px
+    border: none
+
+    & svg
+        background-color: white
+    & svg:hover
+        background-color: white
+        cursor: pointer
+
+.info__block
+    margin-top: 17px
+    width: 360px
+
+.address__form
+    display: flex
+    flex-direction: column
+    & p
+        margin-bottom: 20px
+
+    & input
+        margin-bottom: 20px
+        height: 45px
+        padding-left: 17px
+        padding-right: 17px
+        font-family: Lato
+        font-style: normal
+        font-weight: 300
+        font-size: 13px
+        line-height: 16px
+        color: #B1B1B1
+    & button
+        margin-top: 3px
+        height: 35px
+        max-width: 101px
+        background-color: #ffffff
+        border: 1px solid #A4A4A4
+        font-family: Lato
+        font-style: normal
+        font-weight: 300
+        font-size: 11px
+        line-height: 13px
+        color: #4A4A4A
+
+    &__title
+        font-family: Lato
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #222222
+
+.price__block
+    margin-top: 57px
+    max-width: 360px
+    min-height: 214px
+    background: #F5F3F3
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    &__sub
+        padding-top: 39px
+        padding-bottom: 12px
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 11px
+        line-height: 13px
+        color: #4A4A4A
+        width: 273px
+        text-align: right
+        & span
+            margin-left: 20px
+
+    &__grand
+        font-family: Lato
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #222222
+        width: 273px
+        text-align: right
+        & span
+            color: #F16D7F
+            font-weight: 600
+            margin-left: 20px
+
+    & div
+        width: 275px
+        height: 1px
+        margin-top: 21px
+        background: #E2E2E2
+    &__proceed
+        margin-top: 17px
+        background: #F16D7F
+        border: none
+        width: 273px
+        height: 50px
+        font-family: Lato
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #FFFFFF
+        transition-duration: .5s
+    &__proceed:hover
+        background: #ffffff
+        color: #F16D7F
+        transition-duration: .5s
 
 .subscribe
     min-height: 448px
@@ -74,6 +240,7 @@
         color: #222224
         opacity: 0.67
         padding-left: 22px
+        padding-right: 22px
 
     &__button
         width: 100px
@@ -90,9 +257,11 @@
         text-align: center
         color: #FFFFFF
         background: #F16D7F
+        transition: .5s
 
     &__button:hover
         background: #D73C3C
+        transition: .5s
 
 .footer__info
     min-height: 79px
@@ -112,10 +281,13 @@
 .footer__link
     text-decoration: none
     text-transform: none
+    transition: .3s
 
     .footer__icon:hover &__icon__background
         stroke: #F16D7F
         fill: #F16D7F
+        transition: .3s
 
     .footer__icon:hover &__icon__text
         fill: #FffffF
+        transition: .3s

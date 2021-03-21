@@ -91,38 +91,70 @@ body {
   text-decoration: none;
 }
 
-.filters__block {
-  margin-top: 51px;
+.filter__sort {
+  padding-top: 39px;
+  padding-bottom: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.filter__title__text {
-  margin-left: 16px;
-  margin-right: 11px;
+summary {
+  display: block;
+  outline: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.filter {
+  margin-right: 30px;
+  position: relative;
+  width: 360px;
+}
+
+.filter__summary {
   font-family: Lato;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   color: #000000;
+  padding-right: 11px;
 }
 
-.filters {
-  margin-left: 304px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.filter__details {
+  padding: 0px 16px 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
 }
 
-.first__filter__title {
+.filter__details[open] {
+  background: #FFFFFF;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.filter__details[open] .filter__summary {
+  color: #F16D7F;
+}
+
+.filter__details[open] path {
+  fill: #F16D7F;
+}
+
+.filter__ul {
+  list-style-type: none;
+  padding-left: 17px;
+  padding-top: 24px;
+}
+
+.filter__ul a {
+  text-decoration: none;
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
@@ -131,9 +163,38 @@ body {
   color: #6F6E6E;
 }
 
-.filters__svg__image {
-  margin-left: 10px;
-  margin-right: 28px;
+.filter__details-in {
+  margin-top: 16px;
+}
+
+.filter__details-in[open] .filter__heading-in {
+  color: #EF5B70;
+}
+
+.filter__summary-in {
+  border-left: 5px solid #EF5B70;
+}
+
+.filter__heading-in {
+  padding: 8px 0px 11px 11px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: block;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  -ms-flex-preferred-size: 750px;
+      flex-basis: 750px;
 }
 
 .products {

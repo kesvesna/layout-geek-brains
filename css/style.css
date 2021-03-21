@@ -350,7 +350,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  gap: 30px;
+  gap: 20px;
   margin-top: 95px;
   min-height: 341px;
 }
@@ -451,6 +451,7 @@ body {
   color: #222224;
   opacity: 0.67;
   padding-left: 22px;
+  padding-right: 22px;
 }
 
 .subscribe__button {
