@@ -31,6 +31,8 @@
 
     &__link
         text-decoration: none
+    &__link:hover
+        color: #F16D7F
 
 .filter__sort
     padding-top: 39px
@@ -109,8 +111,43 @@ summary
 
 .sort
     display: flex
-    flex-grow: 2
-    flex-basis: 750px
+.sort__details
+    margin-right: 10px
+    position: relative
+
+    & summary
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+
+.checkbox__form
+    position: absolute
+    min-width: 79px
+    margin-left: -9px
+    box-sizing: border-box
+    z-index: 1
+    background: #FFFFFF
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    & input
+        margin-left: 9px
+        margin-top: 3px
+        margin-bottom: 3px
+
+.sort__checkbox__span
+    font-family: Roboto
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 16px
+    color: #6F6E6E
+    margin-left: 9px
+
+.sort__summary__svg
+    margin-left: 10px
+    margin-right: 28px
 
 .products
     margin-top: 64px

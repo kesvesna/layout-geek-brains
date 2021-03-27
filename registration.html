@@ -26,12 +26,60 @@
 
             </div>
             <div class="header__right">
-                <a class="header__right__link" href="catalog.html">
-                    <svg class="header__right__icons" width="32" height="23" viewBox="0 0 32 23" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" fill="#E8E8E8" />
-                    </svg>
+                <input type="checkbox" id="switcher" class="hidden-menu-ticker">
+                <a class="header__right__link" href="">
+                    <label for="switcher">
+                        <svg class="header__right__icons" width="32" height="23" viewBox="0 0 32 23" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z"
+                                fill="#E8E8E8" />
+                        </svg>
+                    </label>
                 </a>
+
+                <div class="filter__sort hidden-menu">
+                    <div class="filter">
+                        <span class="hidden-menu-title">MENU</span>
+                        <details class="filter__details-in" open>
+                            <summary class="filter__summary-in">
+                                <span class="filter__heading-in">MAN</span>
+                            </summary>
+                            <ul class="filter__ul">
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Bags</a></li>
+                                <li><a href="#">Denim</a></li>
+                                <li><a href="#">T-Shirts</a></li>
+                            </ul>
+                        </details>
+                        <details class="filter__details-in" open>
+                            <summary class="filter__summary-in">
+                                <span class="filter__heading-in">WOMEN</span>
+                            </summary>
+                            <ul class="filter__ul">
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Jackets & Coats</a></li>
+                                <li><a href="#">Polos</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">T-Shirts</a></li>
+                            </ul>
+                        </details>
+                        <details class="filter__details-in" open>
+                            <summary class="filter__summary-in">
+                                <span class="filter__heading-in">KIDS</span>
+                            </summary>
+                            <ul class="filter__ul">
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Jackets & Coats</a></li>
+                                <li><a href="#">Polos</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">T-Shirts</a></li>
+                                <li><a href="#">Bags</a></li>
+                            </ul>
+                        </details>
+
+                    </div>
+                </div>
+
                 <a class="header__right__link" href="registration.html">
                     <svg class="header__right__icons" width="29" height="29" viewBox="0 0 29 29" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -66,9 +114,9 @@
                     <input class="user__name__input" type="text" value="" placeholder="Last name">
                 </div>
                 <div class="checkboxes">
-                    <input class="radio" type="radio" id="Male" name="Male" value="Male" checked="checked">
+                    <input class="radio" type="radio" id="Male" name="sex" value="Male" checked="checked">
                     <label class="radio__label" for="Male">Male</label>
-                    <input class="radio" type="radio" id="Female" name="Female" value="Female">
+                    <input class="radio" type="radio" id="Female" name="sex" value="Female">
                     <label class="radio__label" for="Female">Female</label>
 
                 </div>

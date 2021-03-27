@@ -31,6 +31,8 @@
 
     &__link
         text-decoration: none
+    &__link:hover
+        color: #F16D7F
 
 .slider
     min-height: $topSliderHeight
@@ -114,6 +116,7 @@
         justify-content: center
         items-align: center
         margin-bottom: 48px
+        position: relative
 
     &_filter_details
         display: flex
@@ -147,6 +150,8 @@
     &_filter_details[open] > &_filter_summary::after
         border: none
         content: url('../images/filter_down_arrow.svg')
+.choose__form
+    position: absolute
 
 a.product__choose__link
     display: flex
